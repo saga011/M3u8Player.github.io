@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Launching Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="App Logo" class="logo">
+            <h1>Arrow Player MAX</h1>
+            <button class="download-button">Download</button>
+        </header>
+
+        <section class="description">
+            <p class="short-description">An ultimate video player with amazing features!</p>
+            <p class="long-description">
+                Arrow Player MAX is a feature-rich video player that allows you to zoom and change text colors based on scale gestures. 
+                Enjoy your videos in the best quality and customize your viewing experience with our advanced toolbar settings.
+            </p>
+        </section>
+
+        <section class="screenshots">
+            <h2>Screenshots</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="screenshot1.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="screenshot2.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="screenshot3.png" style="width:100%">
+                </div>
+            </div>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
