@@ -1,0 +1,178 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(to right, #0066ff, #33ccff);
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.download-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-button:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.short-description {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.long-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.screenshots {
+    margin-top: 40px;
+}
+
+.screenshots h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.mySlides img:hover {
+    transform: scale(1.05);
+}
+
+.dot-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Slideshow styles */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header, .description, .screenshots {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .short-description {
+        font-size: 18px;
+    }
+
+    .long-description {
+        font-size: 14px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .slideshow-container {
+        max-width: 90%;
+    }
+
+    .mySlides img {
+        border-radius: 5px;
+    }
+
+    .dot-container {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .slideshow-container {
+        max-width: 80%;
+    }
+
+    .mySlides img {
+        border-radius: 10px;
+    }
+
+    .long-description {
+        max-width: 90%;
+    }
+}
